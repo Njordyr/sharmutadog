@@ -213,14 +213,18 @@ in there just in case</li>
 <div id="apple-button">
 
 </div>
+<b class="req-text">This individual has received all required COVID-19 vaccinations.</b>
  <div class="bottom-details">
  <div class="bottom-descriptor">DOCUMENT NUMBER</div><div class="bottom-value" id="text-docnumber"></div>
+</div>
+<div class="bottom-details">
+ <div class="bottom-descriptor">INDIVIDUAL HEALTHCARE IDENTIFIER (IHI)</div>
+ <div class="bottom-value" id="text-ihi"></div>
 </div>
 <div class="bottom-details">
  <div class="bottom-descriptor">VACCINATIONS</div>
  <div class="bottom-value" id="text-dose1"></div>
  <div class="bottom-value" id="text-dose2"></div>
- <div class="bottom-value" Pfizer Comirnaty • 20 Mar 2022></div>
 </div>
 <div class="bottom-details">
  <div class="bottom-descriptor">LAST UPDATED</div>
@@ -297,8 +301,8 @@ pickyourpoison = "Spikevax Moderna COVID-19 Vaccine";
 }
 
 // Show the clotshot data on screen as the descriptor, the interpunct (middle dot) and dose date
-let dose1text = pickyourpoison + " • " + firstdose;
-let dose2text = pickyourpoison + " • " + lastdose;
+let dose1text = pickyourpoison + " · " + firstdose;
+let dose2text = pickyourpoison + " · " + lastdose;
 
 // Use preset values if the document number and IHI are blank from the data entry screen
 let ihi = vpcont[12];
